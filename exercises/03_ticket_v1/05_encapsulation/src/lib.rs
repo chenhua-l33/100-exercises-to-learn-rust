@@ -34,8 +34,23 @@ pub mod ticket {
         //  - `title` that returns the `title` field.
         //  - `description` that returns the `description` field.
         //  - `status` that returns the `status` field.
-    }
+        // Public method to get the `title` field
+        pub fn title(&self) -> &String {
+            &self.title
+        }
+
+        // Public method to get the `description` field
+        pub fn description(&self) -> &String {
+            &self.description
+        }
+
+        // Public method to get the `status` field
+        pub fn status(&self) -> &String {
+            &self.status
+        }
 }
+}
+
 
 #[cfg(test)]
 mod tests {
